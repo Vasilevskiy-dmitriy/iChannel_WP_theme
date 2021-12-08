@@ -70,6 +70,9 @@ main{
     background: #2e2e2e;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .catalog_link{
     font-size: 14px;
@@ -121,6 +124,7 @@ img.img {
     margin: 5px;
     border-left: 1px solid #bdbdbd;
     padding-left: 15px;
+    width: 100%;
 }
 
 footer{
@@ -286,6 +290,9 @@ h1.h1_inform {
 
 .container_news {
     padding: 50px 30px;
+}
+.container_news_recomend {
+    width: 20%;
 }
 .title_news {
     font-size: 42px;
@@ -525,4 +532,36 @@ input.in_p_O {
 
 input.f_k {
     margin: 0 0 20px 20px;
+}
+
+/*SEARCH*/
+input#s {
+    width: 38px;
+    height: 30px;
+    transition: .1s linear;
+    position: absolute;
+    margin-top: -17px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+input#s:focus {
+    width: 660px;
+    margin-left: -650px;
+}
+
+/*COMMENTS*/
+img.avatar.avatar-32.photo {
+    height: 50px;
+    width: 50px;
+    background: gray;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: block;
+    border: 3px #2e2e2e solid;
+}
+h3#comments {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
 }

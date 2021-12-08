@@ -1,5 +1,4 @@
 <?php get_header();?>
-<?php get_sidebar() ?>
 
 <title><?php bloginfo('name')?></title>
 <main>
@@ -7,7 +6,7 @@
         <div class="title_main"></div>
         <div class="container">
 
-            <?php while ( have_posts() ): the_post('3'); ?>
+            <?php while ( have_posts() ): the_post(); ?>
 
                 <div class="col">
                     <div class="time"><?php echo get_post_time('H:m') ?></div>

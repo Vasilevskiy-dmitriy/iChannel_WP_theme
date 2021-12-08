@@ -1,5 +1,4 @@
 <?php get_header();?>
-<?php get_sidebar() ?>
 <?php
 $arr_cat = get_the_category(NULL);
 $arr_cat = $arr_cat[0];
@@ -29,15 +28,45 @@ $arr_cat = $arr_cat->name;
     </div>
 
     <div class="container_news_recomend">
-
-<!--            <div class="col_n_c">-->
-<!--                <div class="time_rec"></div>-->
-<!--                <a style="color: black;" href="">-->
-<!--                    <div class="title_rec"></div>-->
-<!--                </a>-->
-<!--            </div>-->
+        <?php get_sidebar() ?>
     </div>
-
 </main>
+
+<div class="content_comments">
+    <?php comments_template(); ?>
+<!--    <div class="title_comments">Коментарии ()</div>-->
+<!--        <div class="container_comm">-->
+<!---->
+<!--            <img src="" alt="" class="comm_cont">-->
+<!---->
+<!--            <div>-->
+<!---->
+<!--                <div class="name_comment">-->
+<!--                        <div style="color:red">ADMIN</div>-->
+<!---->
+<!--                </div>-->
+<!--                <div class="text_comm_cont"></div>-->
+<!--                <div class="time_comm"></div>-->
+<!--                    <a style="color: red;font-weight: 900;font-size: 12px;margin-top: 10px;" href="">Delete</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--    <form style="margin-top: 65px;" action="/actionAddComment" class="from_comments" method="post">-->
+<!---->
+<!--        <h2 style="">, оставьте комментарий</h2>-->
+<!---->
+<!--            <div class="flex">-->
+<!--                <img src="/project/img/" alt="" class="comm_cont">-->
+<!--                <input type="text" name="text" placeholder="добавить коментарий" id="" class="text_comm" required>-->
+<!--            </div>-->
+<!---->
+<!--            <input type="hidden" name="name" class="text_comm" value="">-->
+<!--            <input type="hidden" name="img" value="" />-->
+<!--            <input type="hidden" name="page_id" value="" />-->
+<!--            <input type="submit" value="Отправить" class="sub_comm">-->
+<!--    </form>-->
+</div>
+
+
 
 <?php get_footer()?>

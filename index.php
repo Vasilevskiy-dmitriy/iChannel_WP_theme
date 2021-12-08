@@ -1,5 +1,4 @@
 <?php get_header();?>
-<?php get_sidebar() ?>
 <!--CONTENT-->
 
     <title>Information channel</title>
@@ -26,7 +25,7 @@
                 </div>
 
                 <div class="container">
-                    <?php while ( have_posts() ): the_post('3'); ?>
+                    <?php while ( have_posts() ): the_post(); ?>
 
                         <div class="col">
                             <div class="time"><?php echo get_post_time('H:m') ?></div>

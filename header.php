@@ -17,3 +17,7 @@
             <img src="" alt=""  class="dropbtn">
         </div>
     </header>
+<div class="catalog">
+    <?php include "customise/header_cus.php"; ?>
+    <?php get_search_form(); ?>
+</div>
